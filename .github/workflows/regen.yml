@@ -1,0 +1,49 @@
+name: regen feeds
+
+on:
+  # 06:10 UTC, which is after the upstream 12:00 AM CDT fetch window.
+  schedule:
+    - cron: "10 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      # Hard gate 1: a generation failure fails the job red and blocks the commit.
+      - name: Generate feeds from live Shopify
+        id: gen
+        env:
+          SHOPIFY_ADMIN_TOKEN_REDD: ${{ secrets.SHOPIFY_ADMIN_TOKEN_REDD }}
+        run: python gen-feeds.py
+
+      # Hard gate 2: anything differing beyond price and availability fails the
+      # job red. Output lands in the job log either way.
+      - name: Shadow diff vs the live source feeds
+        run: python shadow-diff.py
+
+      # Still publishes when the diff gate trips, because the generated file is
+      # correct by construction and nothing fetches it until cutover day.
+      - name: Commit changed feeds
+        if: always() && steps.gen.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add out/*.tsv
+          if git diff --cached --quiet; then
+            echo "no feed changes"
+          else
+            git commit -m "regen feeds $(date -u +%Y-%m-%d) [skip ci]"
+            git push
+          fi

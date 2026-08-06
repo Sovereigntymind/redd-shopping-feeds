@@ -1,0 +1,456 @@
+{
+  "generated_utc": "2026-08-06T03:38:27+00:00",
+  "store": "redd-remedies.myshopify.com",
+  "api_version": "2026-01",
+  "archive": "tasks/redd-feed-archive-2026-08-04",
+  "counts": {
+    "SMPL": 19,
+    "BRND": 40,
+    "FDZ-URC": 4,
+    "total": 63
+  },
+  "unresolved": [],
+  "rows": [
+    {
+      "id": "manifold_1759417885130149_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "7861300265098",
+      "shopify_variant_id": "44072835874954",
+      "handle": "120-80-care™-3-pack-60-capsules"
+    },
+    {
+      "id": "manifold_1759417885130144_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "7861500412042",
+      "shopify_variant_id": "44073444704394",
+      "handle": "muscle-ease™-3-pack-60-capsules"
+    },
+    {
+      "id": "manifold_1759417885130138_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "8167863320714",
+      "shopify_variant_id": "45065198600330",
+      "handle": "pms-asap"
+    },
+    {
+      "id": "manifold_1759417885130262_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "5191739080842",
+      "shopify_variant_id": "34271751045258",
+      "handle": "childrens-sinus-support"
+    },
+    {
+      "id": "manifold_1759417885130258_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "5211214119050",
+      "shopify_variant_id": "34319422226570",
+      "handle": "joint-health-advanced"
+    },
+    {
+      "id": "manifold_1759417885130140_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "7865370968202",
+      "shopify_variant_id": "44091471921290",
+      "handle": "menowise"
+    },
+    {
+      "id": "manifold_1759417885130253_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "5191738654858",
+      "shopify_variant_id": "34271749931146",
+      "handle": "thyroid-strong"
+    },
+    {
+      "id": "manifold_1759417885130124_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "8410833453194",
+      "shopify_variant_id": "45893380735114",
+      "handle": "dans-wellness-bundle"
+    },
+    {
+      "id": "manifold_1759417885130256_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "5191737180298",
+      "shopify_variant_id": "34271746654346",
+      "handle": "gouch"
+    },
+    {
+      "id": "manifold_1759417885130254_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "5191738294410",
+      "shopify_variant_id": "34271749439626",
+      "handle": "120-80-care"
+    },
+    {
+      "id": "manifold_1759417885130125_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "8371543867530",
+      "shopify_variant_id": "45749190262922",
+      "handle": "menopause-bundle"
+    },
+    {
+      "id": "manifold_1759417885130141_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "7861518139530",
+      "shopify_variant_id": "44073562800266",
+      "handle": "joint-health-advanced™-3-pack-60-capsules"
+    },
+    {
+      "id": "manifold_1759417885130252_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "5191738130570",
+      "shopify_variant_id": "34271747997834",
+      "handle": "adult-sinus-support"
+    },
+    {
+      "id": "manifold_1759417885130257_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "5211214119050",
+      "shopify_variant_id": "34319422193802",
+      "handle": "joint-health-advanced"
+    },
+    {
+      "id": "manifold_1759417885130268_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "5191738065034",
+      "shopify_variant_id": "34271747833994",
+      "handle": "muscle-ease"
+    },
+    {
+      "id": "manifold_1759417885130142_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "7861516435594",
+      "shopify_variant_id": "44073553035402",
+      "handle": "gouch-™-3-pack-120-capsules"
+    },
+    {
+      "id": "manifold_1759417885130143_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "7861515288714",
+      "shopify_variant_id": "44073546055818",
+      "handle": "gouch-™-3-pack-60-capsules"
+    },
+    {
+      "id": "manifold_1759417885130255_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "5191737180298",
+      "shopify_variant_id": "34271746621578",
+      "handle": "gouch"
+    },
+    {
+      "id": "manifold_1759417885130277_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "5191737245834",
+      "shopify_variant_id": "34271746719882",
+      "handle": "crave-stop"
+    },
+    {
+      "id": "manifold_1758146746139231_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "7861488058506",
+      "shopify_variant_id": "44073387884682",
+      "handle": "bone-health-advanced™-3-pack-120-capsules"
+    },
+    {
+      "id": "manifold_1758146746139234_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "7861516435594",
+      "shopify_variant_id": "44073553035402",
+      "handle": "gouch-™-3-pack-120-capsules"
+    },
+    {
+      "id": "manifold_1758146746139235_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "7861515288714",
+      "shopify_variant_id": "44073546055818",
+      "handle": "gouch-™-3-pack-60-capsules"
+    },
+    {
+      "id": "manifold_1758146746139348_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737180298",
+      "shopify_variant_id": "34271746654346",
+      "handle": "gouch"
+    },
+    {
+      "id": "manifold_1758146746139349_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5211214119050",
+      "shopify_variant_id": "34319422193802",
+      "handle": "joint-health-advanced"
+    },
+    {
+      "id": "manifold_1758146746139367_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737376906",
+      "shopify_variant_id": "34271746850954",
+      "handle": "brain-awakening"
+    },
+    {
+      "id": "manifold_1758146746139241_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "7861300265098",
+      "shopify_variant_id": "44072835874954",
+      "handle": "120-80-care™-3-pack-60-capsules"
+    },
+    {
+      "id": "manifold_1758146746139238_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "7861495595146",
+      "shopify_variant_id": "44073424289930",
+      "handle": "joint-health-original™-3-pack-90-capsules"
+    },
+    {
+      "id": "manifold_1758146746139370_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737114762",
+      "shopify_variant_id": "34271746228362",
+      "handle": "nerve-shield"
+    },
+    {
+      "id": "manifold_1758146746139373_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737016458",
+      "shopify_variant_id": "34271746064522",
+      "handle": "joint-health-original"
+    },
+    {
+      "id": "manifold_1758146746139240_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "7861490679946",
+      "shopify_variant_id": "44073399222410",
+      "handle": "brain-awakening™-3-pack-120-capsules"
+    },
+    {
+      "id": "manifold_1758146746139351_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191741767818",
+      "shopify_variant_id": "34271755796618",
+      "handle": "curcumin-t4"
+    },
+    {
+      "id": "manifold_1758146746139217_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "8371543867530",
+      "shopify_variant_id": "45749190262922",
+      "handle": "menopause-bundle"
+    },
+    {
+      "id": "manifold_1758146746139227_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "8334836498570",
+      "shopify_variant_id": "45624746279050",
+      "handle": "brain-body-bundle"
+    },
+    {
+      "id": "manifold_1758146746139228_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "8334833614986",
+      "shopify_variant_id": "45624738939018",
+      "handle": "emotional-wellness-bundle"
+    },
+    {
+      "id": "manifold_1758146746139354_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191739080842",
+      "shopify_variant_id": "34271751045258",
+      "handle": "childrens-sinus-support"
+    },
+    {
+      "id": "manifold_1758146746139226_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "8334837645450",
+      "shopify_variant_id": "45624749129866",
+      "handle": "healthy-aging-bundle"
+    },
+    {
+      "id": "manifold_1758146746139363_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737704586",
+      "shopify_variant_id": "34271747178634",
+      "handle": "cholesterol-triple-care"
+    },
+    {
+      "id": "manifold_1758146746139375_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191736983690",
+      "shopify_variant_id": "34271745966218",
+      "handle": "at-ease-pm"
+    },
+    {
+      "id": "manifold_1758146746139360_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191738065034",
+      "shopify_variant_id": "34271747833994",
+      "handle": "muscle-ease"
+    },
+    {
+      "id": "manifold_1758146746139346_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191738294410",
+      "shopify_variant_id": "34271749439626",
+      "handle": "120-80-care"
+    },
+    {
+      "id": "manifold_1758146746139365_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737507978",
+      "shopify_variant_id": "34271747014794",
+      "handle": "at-ease"
+    },
+    {
+      "id": "manifold_1758146746139368_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737278602",
+      "shopify_variant_id": "34271746752650",
+      "handle": "bone-health-advanced"
+    },
+    {
+      "id": "manifold_1758146746139372_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737049226",
+      "shopify_variant_id": "34271746130058",
+      "handle": "joint-health-soft-chews"
+    },
+    {
+      "id": "manifold_1758146746139216_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "8410833453194",
+      "shopify_variant_id": "45893380735114",
+      "handle": "dans-wellness-bundle"
+    },
+    {
+      "id": "manifold_1758146746139232_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "7865370968202",
+      "shopify_variant_id": "44091471921290",
+      "handle": "menowise"
+    },
+    {
+      "id": "manifold_1758146746139230_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "8167863320714",
+      "shopify_variant_id": "45065198600330",
+      "handle": "pms-asap"
+    },
+    {
+      "id": "manifold_1758146746139361_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737901194",
+      "shopify_variant_id": "34271747440778",
+      "handle": "lung-care"
+    },
+    {
+      "id": "manifold_1758146746139369_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737245834",
+      "shopify_variant_id": "34271746719882",
+      "handle": "crave-stop"
+    },
+    {
+      "id": "manifold_1758146746139233_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "7861518139530",
+      "shopify_variant_id": "44073562800266",
+      "handle": "joint-health-advanced™-3-pack-60-capsules"
+    },
+    {
+      "id": "manifold_1758146746139364_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737606282",
+      "shopify_variant_id": "34271747080330",
+      "handle": "calcium-mag-d"
+    },
+    {
+      "id": "manifold_1758146746139218_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "8364499239050",
+      "shopify_variant_id": "45726639456394",
+      "handle": "hunger-cravings-bundle"
+    },
+    {
+      "id": "manifold_1758146746139219_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "8334882701450",
+      "shopify_variant_id": "45624821383306",
+      "handle": "womens-health-bundle"
+    },
+    {
+      "id": "manifold_1758146746139220_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "8334881915018",
+      "shopify_variant_id": "45624819384458",
+      "handle": "stress-management-bundle"
+    },
+    {
+      "id": "manifold_1758146746139225_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "8334845509770",
+      "shopify_variant_id": "45624764694666",
+      "handle": "heart-health-bundle"
+    },
+    {
+      "id": "manifold_1758146746139242_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "7669565522058",
+      "shopify_variant_id": "42756210163850",
+      "handle": "rhythm-flo"
+    },
+    {
+      "id": "manifold_1758146746139343_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "7622315049098",
+      "shopify_variant_id": "42667615944842",
+      "handle": "peaceful-mama"
+    },
+    {
+      "id": "manifold_1758146746139353_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191739310218",
+      "shopify_variant_id": "34271751340170",
+      "handle": "sinuzyme"
+    },
+    {
+      "id": "manifold_1758146746139344_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191738130570",
+      "shopify_variant_id": "34271747997834",
+      "handle": "adult-sinus-support"
+    },
+    {
+      "id": "manifold_1758146746139347_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191737180298",
+      "shopify_variant_id": "34271746621578",
+      "handle": "gouch"
+    },
+    {
+      "id": "manifold_7861516435594_44073553035402_uricacid",
+      "feed": "FDZ-URC",
+      "shopify_product_id": "7861516435594",
+      "shopify_variant_id": "44073553035402",
+      "handle": "gouch-™-3-pack-120-capsules"
+    },
+    {
+      "id": "manifold_5191737180298_34271746621578_uricacid",
+      "feed": "FDZ-URC",
+      "shopify_product_id": "5191737180298",
+      "shopify_variant_id": "34271746621578",
+      "handle": "gouch"
+    },
+    {
+      "id": "manifold_7861515288714_44073546055818_uricacid",
+      "feed": "FDZ-URC",
+      "shopify_product_id": "7861515288714",
+      "shopify_variant_id": "44073546055818",
+      "handle": "gouch-™-3-pack-60-capsules"
+    },
+    {
+      "id": "manifold_5191737180298_34271746654346_uricacid",
+      "feed": "FDZ-URC",
+      "shopify_product_id": "5191737180298",
+      "shopify_variant_id": "34271746654346",
+      "handle": "gouch"
+    }
+  ]
+}

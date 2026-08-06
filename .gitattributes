@@ -1,0 +1,6 @@
+# The feeds are byte-exact artifacts: LF endings, no trailing newline.
+# core.autocrlf is true on Windows checkouts, which would hand a clone CRLF files
+# and change the bytes Merchant Center fetches when these are served straight
+# from the repo. Pin both the generated output and the blueprint templates.
+out/*.tsv text eol=lf
+templates/*.tsv text eol=lf
