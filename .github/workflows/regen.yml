@@ -28,13 +28,9 @@ jobs:
           SHOPIFY_ADMIN_TOKEN_REDD: ${{ secrets.SHOPIFY_ADMIN_TOKEN_REDD }}
         run: python gen-feeds.py
 
-      # Hard gate 2: anything differing beyond price and availability fails the
-      # job red. Output lands in the job log either way.
-      - name: Shadow diff vs the live source feeds
-        run: python shadow-diff.py
-
-      # Still publishes when the diff gate trips, because the generated file is
-      # correct by construction and nothing fetches it until cutover day.
+      # Shadow-diff step removed 2026-08-18: Feedzly (the vendor feed it compared
+      # against) is dead — SSL cert expired 8/17, service retired. Merchant Center
+      # cutover to these self-hosted feeds completed 8/6-8/10.
       - name: Commit changed feeds
         if: always() && steps.gen.outcome == 'success'
         run: |
