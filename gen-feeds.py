@@ -50,6 +50,13 @@ def money(raw: str, archived_price: str) -> str:
         raise SystemExit(f"FATAL: Shopify returned an unparseable price: {raw!r}")
 
 
+# Landing-page overrides by Shopify variant: link path swapped, query string (fdzly tag) kept.
+# 2026-10-01 D-506/D-485 (Kevin "a": Gouch Shopping clicks to the BOGO lander). Only the 60ct variant:
+# the BOGO page sells 1 bottle one-time at $42.99 (= feed price); 120ct / 3-packs stay on /products/gouch.
+# Revert = delete the entry; the next regen restores the archived link.
+LINK_OVERRIDES = {"34271746621578": "https://reddremedies.com/pages/gouch-offer"}
+
+
 def main() -> int:
     if not fl.MAPPING_PATH.exists():
         raise SystemExit("FATAL: mapping.json missing. Run build-mapping.py first.")
@@ -86,6 +93,13 @@ def main() -> int:
             row = list(r)
             row[I_PRICE] = money(v["price"], r[I_PRICE])
             row[I_AVAIL] = "in_stock" if v["availableForSale"] else "out_of_stock"
+            ovr = LINK_OVERRIDES.get(m["shopify_variant_id"])
+            if ovr:
+                I_LINK = header.index("link")
+                q = r[I_LINK].split("?", 1)[1] if "?" in r[I_LINK] else ""
+                tag = "&".join(x for x in q.split("&") if x.startswith("fdzly="))
+                row[I_LINK] = ovr + (f"?{tag}" if tag else "")
+                print(f"           LINK OVERRIDE {item_id}: {r[I_LINK]} -> {row[I_LINK]}")
             if row[I_PRICE] != r[I_PRICE]:
                 price_moves.append(f"{item_id}: {r[I_PRICE]} -> {row[I_PRICE]}")
             if row[I_AVAIL] != r[I_AVAIL]:
