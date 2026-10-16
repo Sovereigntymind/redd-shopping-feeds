@@ -25,7 +25,7 @@ TOKEN_ENV = "SHOPIFY_ADMIN_TOKEN_REDD"
 # Feed labels are exact and load bearing: a label cannot be edited after a data
 # source is created, only deleted and recreated. See the 8/3 readiness doc.
 FEEDS = [
-    ("SMPL", "FDZ-SMPL", "FDZ-SMPL.tsv", 19),
+    ("SMPL", "FDZ-SMPL", "FDZ-SMPL.tsv", 20),  # +1 D-512 hidden 120/80 BOGO item (10/15)
     ("BRND", "FDZ-BRND", "FDZ-BRND.tsv", 40),
     ("FDZ-URC", "FDZ-URIC", "FDZ-URIC.tsv", 4),
 ]
@@ -107,7 +107,8 @@ def parse_tsv(raw: str) -> tuple[list[str], list[list[str]]]:
 def read_archive(filename: str) -> tuple[list[str], list[list[str]]]:
     """Header comes back in the file's OWN order (see the COLUMNS note)."""
     header, rows = parse_tsv((ARCHIVE_DIR / filename).read_text(encoding="utf-8"))
-    if sorted(header) != sorted(COLUMNS):
+    # D-512 10/15: one optional extra column, excluded_destination (ads-only items, e.g. Free_listings)
+    if sorted(header) not in (sorted(COLUMNS), sorted(COLUMNS + ["excluded_destination"])):
         raise SystemExit(
             f"FATAL: archive {filename} does not carry the canonical 24 columns. "
             f"Got {len(header)}: {header}"

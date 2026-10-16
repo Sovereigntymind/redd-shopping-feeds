@@ -4,10 +4,10 @@
   "api_version": "2026-01",
   "archive": "tasks/redd-feed-archive-2026-08-04",
   "counts": {
-    "SMPL": 19,
+    "SMPL": 20,
     "BRND": 40,
     "FDZ-URC": 4,
-    "total": 63
+    "total": 64
   },
   "unresolved": [],
   "rows": [
@@ -451,6 +451,14 @@
       "shopify_product_id": "5191737180298",
       "shopify_variant_id": "34271746654346",
       "handle": "gouch"
+    },
+    {
+      "id": "manifold_12080shopbogo_smpl",
+      "feed": "SMPL",
+      "shopify_product_id": "9387487723658",
+      "shopify_variant_id": "50472234909834",
+      "handle": "120-80-care-bogo-offer",
+      "note": "D-512 GO 4 (Kevin 10/15 night): hidden UNLISTED 120/80 BOGO product page, ads only (Free_listings excluded)"
     }
   ]
 }
