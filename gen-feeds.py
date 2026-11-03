@@ -54,7 +54,7 @@ def money(raw: str, archived_price: str) -> str:
 # 2026-10-01 D-506/D-485 (Kevin "a": Gouch Shopping clicks to the BOGO lander). Only the 60ct variant:
 # the BOGO page sells 1 bottle one-time at $42.99 (= feed price); 120ct / 3-packs stay on /products/gouch.
 # Revert = delete the entry; the next regen restores the archived link.
-LINK_OVERRIDES = {"34271746621578": "https://reddremedies.com/pages/gouch-offer"}
+LINK_OVERRIDES = {}   # D-810 11/2: BOGO takedown, Gouch 60ct back to its product-page link
 
 
 def main() -> int:
