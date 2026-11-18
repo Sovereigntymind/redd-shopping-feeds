@@ -26,7 +26,7 @@ TOKEN_ENV = "SHOPIFY_ADMIN_TOKEN_REDD"
 # source is created, only deleted and recreated. See the 8/3 readiness doc.
 FEEDS = [
     ("SMPL", "FDZ-SMPL", "FDZ-SMPL.tsv", 19),
-    ("BRND", "FDZ-BRND", "FDZ-BRND.tsv", 40),
+    ("BRND", "FDZ-BRND", "FDZ-BRND.tsv", 41),  # +1 D-902 True Energy (11/18)
     ("FDZ-URC", "FDZ-URIC", "FDZ-URIC.tsv", 4),
 ]
 

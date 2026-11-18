@@ -61,7 +61,7 @@ def main() -> int:
     if not fl.MAPPING_PATH.exists():
         raise SystemExit("FATAL: mapping.json missing. Run build-mapping.py first.")
     mapping = json.loads(fl.MAPPING_PATH.read_text(encoding="utf-8"))
-    if mapping["unresolved"] or mapping["counts"]["total"] != 63:
+    if mapping["unresolved"] or mapping["counts"]["total"] != 64:
         raise SystemExit("FATAL: mapping.json has unresolved rows. Fix the mapping before generating.")
     by_id = {r["id"]: r for r in mapping["rows"]}
 
@@ -118,7 +118,7 @@ def main() -> int:
         for line in price_moves + avail_moves:
             print(f"           {line}")
 
-    print(f"\nPASS: 63 rows written to {fl.OUT_DIR} "
+    print(f"\nPASS: 64 rows written to {fl.OUT_DIR} "
           f"(vs the 8/4 archive: {total_price} price change(s), {total_avail} availability change(s))")
     return 0
 

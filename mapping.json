@@ -5,9 +5,9 @@
   "archive": "tasks/redd-feed-archive-2026-08-04",
   "counts": {
     "SMPL": 19,
-    "BRND": 40,
+    "BRND": 41,
     "FDZ-URC": 4,
-    "total": 63
+    "total": 64
   },
   "unresolved": [],
   "rows": [
@@ -423,6 +423,14 @@
       "shopify_product_id": "5191737180298",
       "shopify_variant_id": "34271746621578",
       "handle": "gouch"
+    },
+    {
+      "id": "manifold_5191738753162_34271750619274_brnd",
+      "feed": "BRND",
+      "shopify_product_id": "5191738753162",
+      "shopify_variant_id": "34271750619274",
+      "handle": "true-energy",
+      "note": "D-902 11/18: True Energy added to BRND so Google can attach the Nov 27 Shopify discounts"
     },
     {
       "id": "manifold_7861516435594_44073553035402_uricacid",
